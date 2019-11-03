@@ -2,6 +2,7 @@ package com.example.probolinggowisata;
 
 import
         androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 "Ada banyak spot cantik yang bisa kamu explore untuk menambah koleksi foto liburanmu. Mulai dari dermaga pantai hingga hutan bakau."
                 , R.drawable.pantaibentar));
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        LinearLayoutManager layoutManager = new GridLayoutManager(this, 2);
         RecyclerView.LayoutManager probolinggoLayout = layoutManager;
         probRv.setLayoutManager(probolinggoLayout);
 
