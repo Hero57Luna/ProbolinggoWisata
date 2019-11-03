@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 "Ada banyak spot cantik yang bisa kamu explore untuk menambah koleksi foto liburanmu. Mulai dari dermaga pantai hingga hutan bakau."
                 , R.drawable.pantaibentar));
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         RecyclerView.LayoutManager probolinggoLayout = layoutManager;
         probRv.setLayoutManager(probolinggoLayout);
 
